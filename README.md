@@ -36,6 +36,7 @@ line.alteraLimitesSpciSpviConta(symbol=instrumento, spci=2,spvi=3)
 
 #### Remove o limite por instrumento de um determinado cliente/instrumento
 ```
+instrumento = 'WING24'
 line.removeLimiteSpciSpvi(instrumento)
 ```
 
