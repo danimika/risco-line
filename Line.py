@@ -5,7 +5,7 @@ from typing import List, Optional, Dict, Union
 from dotenv import dotenv_values
 
 
-class APILine():
+class Line():
     def __init__(self):
         self.broker_code = None
         self.category_code = None
