@@ -47,7 +47,7 @@ class Line():
             print(f'Erro na solicitação: {t.status_code} - {t.text}')
 
     def consulta(self, endpoint: str, parametros)-> List[Union[int, str]]:
-        time.sleep(0.1)
+        time.sleep(0.2)
         url = self.url + endpoint
         headers = { 'Authorization': 'Bearer '+ self.token }
         response = requests.get(url, params=parametros, headers=headers)
@@ -59,7 +59,7 @@ class Line():
             return None
 
     def altera(self, endpoint: str, parametros) -> Union[requests.Response, None]:
-        time.sleep(0.1)
+        time.sleep(0.2)
         url = self.url + endpoint
         headers = { 'Authorization': 'Bearer '+ self.token, 'Content-Type': 'application/json' }
         response = requests.post(url, json=parametros, headers=headers)
@@ -279,7 +279,7 @@ class Line():
         endpoint = 'account/' + str(self.accId) + '/lmt/spxi'
 
         data =[{"symbol": symbol,
-            "isRemoved": True
+            "isRemoved": "True"
         }]
 
         response = self.altera(endpoint=endpoint, parametros=data)
