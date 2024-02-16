@@ -6,7 +6,7 @@ Script básico para utilização das APIs do line
 
 ## Exemplos de uso
 ```
-line= APILine()
+line= Line()
 line.auth()
 ```
 
