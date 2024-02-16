@@ -1,6 +1,9 @@
 # LINE
 Script básico para utilização das APIs do line
 
+>Devem ser preenchidos os dados no arquivo .env conforme arquivo de exemplo<br>
+>O usuário deve ser um **usuário de serviço do CAU**
+
 ## Exemplos de uso
 ```
 line= APILine()
