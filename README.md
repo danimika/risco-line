@@ -23,7 +23,7 @@ cliente = line.consultaConta(accountCode=cd_cliente)
 line.setIdConta(cliente[0]['id'])
 ```
 
-#### Bloqueia a conta
+#### Bloqueia/desbloqueia a conta
 ```
 line.alteraConta(isBlocked=False)
 ```
