@@ -8,6 +8,8 @@ Projeto em construção, só feito o básico ainda, para facilitar algumas consu
 
 ## Exemplos de uso
 ```
+from Line import Line
+
 line = Line()
 line.auth()
 ```
